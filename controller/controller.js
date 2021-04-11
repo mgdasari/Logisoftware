@@ -1,4 +1,5 @@
 const Book = require("../model/model");
+const url = require("url");
 var mongoose = require("mongoose");
 const db = require("../config/config").get(process.env.NODE_ENV);
 
@@ -40,8 +41,7 @@ exports.add = (req, res) => {
           message:
             err.message || "Some error occurred while creating the Note.",
         });
-      } else if (!data) {
-        console.log("dataFount:" + data);
+      } else if (data && data != '') {
         res.status(200).send({
           message: "book already exist",
         });

@@ -1,5 +1,4 @@
 const Book = require("../model/model");
-const url = require("url");
 var mongoose = require("mongoose");
 const db = require("../config/config").get(process.env.NODE_ENV);
 

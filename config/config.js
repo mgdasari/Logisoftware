@@ -6,7 +6,7 @@ const config = {
   default: {
     SECRET: "mysecretkey",
     DATABASE:
-      "mongodb+srv://mukund:mukund12345@cluster0.yzglj.mongodb.net/test?retryWrites=true&w=majority",
+      "mongodb+srv://mukund:mukun@cluster0.yzglj.mongodb.net/test?retryWrites=true&w=majority",
   },
 };
 
